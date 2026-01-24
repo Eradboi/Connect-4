@@ -1,5 +1,6 @@
 # 🎮 Connect-4
 A classic Connect Four game implementation with a twist - built on a 5x4 board using Python and Pygame!
+
 ![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
 ![Pygame](https://img.shields.io/badge/Pygame-2.0+-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
