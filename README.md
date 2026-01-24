@@ -46,7 +46,6 @@ python main.py
 3. Click on a column to drop your disc
 4. Players alternate turns
 5. First player to connect 4 discs in a row wins!
-6. Press `R` to restart the game at any time
 ## 📖 Game Rules
 - Players take turns dropping one disc per turn
 - Discs fall to the lowest available position in the selected column
@@ -54,12 +53,12 @@ python main.py
 - Horizontally ➡️
 - Vertically ⬇️
 - Diagonally ↘️ or ↙️
-- The game ends in a draw if the board fills up with no winner
+- The round ends in a draw if the board fills up with no winner
 ## 📁 Project Structure
 ```
 Connect-4/
 │
-├── Assets/          # Game graphics and sprites
+├── Assets/          # Game graphics and images
 ├── Audio/           # Sound effects and music files
 ├── Font/            # Custom fonts for UI
 ├── main.py          # Main game file
