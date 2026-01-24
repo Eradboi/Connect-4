@@ -4,6 +4,8 @@ A classic Connect Four game implementation with a twist - built on a 5x4 board u
 ![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
 ![Pygame](https://img.shields.io/badge/Pygame-2.0+-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
+
+[![Watch the video](https://img.youtube.com/vi/uhaWzecUmdc/maxresdefault.jpg)](https://www.youtube.com/watch?v=uhaWzecUmdc)
 ## 📋 Table of Contents
 - [About](#about)
 - [Features](#features)
@@ -103,7 +105,7 @@ This project is open source and available under the MIT License.
 *Coming soon! Screenshots of gameplay will be added here.*
 ---
 <div align="center">
-**Enjoy the game! If you like this project, please give it a ⭐**
+  Enjoy the game! If you like this project, please give it a ⭐
   
 Made with ❤️ and Python
 </div>
