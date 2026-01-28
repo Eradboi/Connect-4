@@ -16,16 +16,16 @@ A classic Connect Four game implementation with a twist - built on a 5x4 board u
 - [Requirements](#requirements)
 - [Contributing](#contributing)
 - [License](#license)
-## 🎯 About
+## About
 Connect-4 is a two-player connection game where players take turns dropping colored discs into a vertically suspended grid. This implementation features a unique 5x4 board configuration, providing a fresh take on the classic game. Built with Pygame, it offers smooth graphics, sound effects, and an intuitive user interface.
-## ✨ Features
+## Features
 - **Custom Board Size**: 5 columns × 4 rows grid for faster gameplay
 - **Two-Player Mode**: Play against a friend on the same computer
 - **Visual Feedback**: Smooth animations and clear disc placement
 - **Audio Effects**: Engaging sound effects for moves and wins
 - **Clean UI**: Intuitive interface with custom fonts and graphics
 - **Game Logic**: Smart win detection for horizontal, vertical, and diagonal connections
-## 🚀 Installation
+## Installation
 ### Prerequisites
 - Python 3.7 or higher
 - pip package manager
@@ -43,13 +43,13 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-## 🎲 How to Play
+## How to Play
 1. Launch the game by running `main.py`
 2. Player 1 (Red) goes first
 3. Click on a column to drop your disc
 4. Players alternate turns
 5. First player to connect 4 discs in a row wins!
-## 📖 Game Rules
+## Game Rules
 - Players take turns dropping one disc per turn
 - Discs fall to the lowest available position in the selected column
 - Win by connecting **4 discs** in a row:
@@ -57,7 +57,7 @@ python main.py
 - Vertically ⬇️
 - Diagonally ↘️ or ↙️
 - The round ends in a draw if the board fills up with no winner
-## 📁 Project Structure
+## Project Structure
 ```
 Connect-4/
 │
@@ -68,7 +68,7 @@ Connect-4/
 ├── requirements.txt # Python dependencies
 └── README.md        # Project documentation
 ```
-## 📦 Requirements
+## Requirements
 The game requires the following Python packages (listed in `requirements.txt`):
 ```
 pygame
@@ -77,7 +77,7 @@ Install all dependencies with:
 ```bash
 pip install -r requirements.txt
 ```
-## 🤝 Contributing
+## Contributing
 Contributions are welcome! Here's how you can help:
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature/amazing-feature`)
@@ -92,12 +92,12 @@ Contributions are welcome! Here's how you can help:
 - Create a tournament mode
 - Add themes and customization options
 - Improve animations and visual effects
-## 📝 License
+## License
 This project is open source and available under the MIT License.
-## 👤 Author
+## Author
 **Eradboi**
 - GitHub: [@Eradboi](https://github.com/Eradboi)
-## 🙏 Acknowledgments
+## Acknowledgments
 - Inspired by the classic Connect Four game by Milton Bradley
 - Built with [Pygame](https://www.pygame.org/)
 - Thanks to all contributors and players!
