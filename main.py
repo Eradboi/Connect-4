@@ -242,7 +242,7 @@ def start():
         screen.blit(text_surface, (input_rect.x + 5, input_rect.centery-(text_surface.get_height()/2)))
         # render at position stated in arguments  
         screen.blit(text_surface2, ((width/2)-(text_surface2.get_width()/2), 250))
-        screen.blit(submit_button, ((width/2)-(submit_button.width/2), 350))
+        screen.blit(submit_button, ((width/2)-(submit_button.get_width()/2), 350))
         if first_name:
             username2 = user_text
         else:
@@ -258,8 +258,6 @@ start()
 
 def game_window():
     global X_SCORE, O_SCORE, username1, username2, message, STREAK_COUNT, winner, win_direction, table1, table2, table3, table4, grand_table
-    username1 = 'Erad'
-    username2 = 'Connor'
     if winner:
         # To display the discs/pieces
         drawing_height = 545
@@ -313,7 +311,7 @@ def game_window():
                 screen.blit(yellow_diagonal_flip, (win_direction[1], win_direction[2]))
 
             win_text = SCORE_FONT.render(f'{username2} won this round', 1, 'yellow')
-        screen.blit(win_text, ((width/2)-(win_text.width/2),(height/2)-(win_text.height/2)))
+        screen.blit(win_text, ((width/2)-(win_text.get_width()/2),(height/2)-(win_text.get_height()/2)))
         winner = None
         win_direction = None
         pg.display.update()
@@ -333,27 +331,27 @@ def game_window():
     score2 = SCORE_FONT.render(f'{O_SCORE}', 1, 'white') 
 
     screen.blit(board, (200,20))
-    screen.blit(red_score_board, (5,(height/2)-(red_score_board.height/2)))
-    screen.blit(yellow_score_board, (1150,(height/2)-(red_score_board.height/2)))
-    screen.blit(username1_display, (20, (height/2)-(red_score_board.height/2)+5))
-    screen.blit(username2_display, (1160,(height/2)-(yellow_score_board.height/2)+5))
-    screen.blit(score1, (45, (height/2)-(red_score_board.height/2)+105))
-    screen.blit(score2, (1190,(height/2)-(yellow_score_board.height/2)+105))
+    screen.blit(red_score_board, (5,(height/2)-(red_score_board.get_height()/2)))
+    screen.blit(yellow_score_board, (1150,(height/2)-(red_score_board.get_height()/2)))
+    screen.blit(username1_display, (20, (height/2)-(red_score_board.get_height()/2)+5))
+    screen.blit(username2_display, (1160,(height/2)-(yellow_score_board.get_height()/2)+5))
+    screen.blit(score1, (45, (height/2)-(red_score_board.get_height()/2)+105))
+    screen.blit(score2, (1190,(height/2)-(yellow_score_board.get_height()/2)+105))
 
     # For the streak control
     if STREAK_COUNT[1] > 1:
         streak_score = STREAK_FONT.render(f'{STREAK_COUNT[1]}', 1, 'white')
         if STREAK_COUNT[0] == 'X':
-            screen.blit(streak, (40, (height/2)-(red_score_board.height/2)+185))
-            screen.blit(streak_score, (65, (height/2)-(red_score_board.height/2)+180))
+            screen.blit(streak, (40, (height/2)-(red_score_board.get_height()/2)+185))
+            screen.blit(streak_score, (65, (height/2)-(red_score_board.get_height()/2)+180))
         if STREAK_COUNT[0] == 'O':
-            screen.blit(streak, (1190, (height/2)-(yellow_score_board.height/2)+185))
-            screen.blit(streak_score, (1215, (height/2)-(yellow_score_board.height/2)+180))
+            screen.blit(streak, (1190, (height/2)-(yellow_score_board.get_height()/2)+185))
+            screen.blit(streak_score, (1215, (height/2)-(yellow_score_board.get_height()/2)+180))
 
     # To display messages on-screen
     if message:
         message_text = MESSAGE_FONT.render(f'{message}', 1, 'white')
-        screen.blit(message_text, ((width/2)-(message_text.width/2), height-50))
+        screen.blit(message_text, ((width/2)-(message_text.get_width()/2), height-50))
     
     # To display the discs/pieces
     drawing_height = 545
@@ -561,11 +559,6 @@ def main_logic():
                     if switch:
                         current = 'O'
                         message = f"{username2}'s turn"
-                    # testing
-                    print(table4)
-                    print(table3)
-                    print(table2)
-                    print(table1)
                     break
             else:
                 message = f'Invalid column selection from {username1}. Try again'
@@ -747,11 +740,6 @@ def main_logic():
                     if switch:
                         current = 'X'
                         message = f"{username1}'s turn"
-                    # testing
-                    print(table4)
-                    print(table3)
-                    print(table2)
-                    print(table1)
                     break
             else:
                 message = f'Invalid column selection from {username1}. Try again'
@@ -799,7 +787,7 @@ def main():
 
                 pg.draw.rect(screen, game_blue, quit_rect) 
                 pg.draw.rect(screen, game_blue, back_rect) 
-                screen.blit(quit_button, ((width/2)-(quit_button.width/2), 300))
+                screen.blit(quit_button, ((width/2)-(quit_button.get_width()/2), 300))
                 screen.blit(back_button, (10, 10))
 
                 pg.display.update()
