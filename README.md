@@ -26,10 +26,13 @@ Connect-4 is a two-player connection game where players take turns dropping colo
 - **Clean UI**: Intuitive interface with custom fonts and graphics
 - **Game Logic**: Smart win detection for horizontal, vertical, and diagonal connections
 ## Installation
-### Prerequisites
+You can install it by downloading the executable or cloning the repository
+### APK Method
+### Repository Method
+#### Prerequisites
 - Python 3.7 or higher
 - pip package manager
-### Setup Instructions
+#### Setup Instructions
 1. **Clone the repository**
 ```bash
 git clone https://github.com/Eradboi/Connect-4.git
@@ -72,11 +75,15 @@ Connect-4/
 The game requires the following Python packages (listed in `requirements.txt`):
 ```
 pygame
+pyvidplayer2
 ```
 Install all dependencies with:
 ```bash
 pip install -r requirements.txt
 ```
+Note that the intro video at the beginning of the game was implemented using pyvidplayer.
+Although not having it's dependencies will skip the video, and continue to the game, I would recommend checking it out [here](https://github.com/anrayliu/pyvidplayer2) to install the dependencies e.g `ffmpeg`.
+
 ## Contributing
 Contributions are welcome! Here's how you can help:
 1. Fork the repository
